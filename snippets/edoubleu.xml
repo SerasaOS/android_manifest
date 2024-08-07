@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="ewOS"
+           fetch="https://github.com/SerasaOS"
+           revision="refs/heads/14" />
+
+  <!-- Rootdir -->
+  <project path="bionic" name="android_bionic" groups="pdk" remote="ewOS" />
+  <project path="art" name="android_art" groups="pdk" remote="ewOS" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="ewOS" />
+
+  <!-- Build -->
+  <project path="build/make" name="android_build" groups="pdk" remote="ewOS">
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="ewOS">
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
+  </project>
+
+  <!-- External -->
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="pdk" remote="ewOS" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc_new" groups="pdk" remote="ewOS" />
+  <project path="external/skia" name="android_external_skia" groups="pdk" remote="ewOS" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="ewOS" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="ewOS" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="ewOS" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="ewOS" />
+
+  <!-- Hardware -->
+  <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel" remote="ewOS" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="ewOS" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" groups="pdk" remote="ewOS" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="ewOS" />
+
+  <!-- System -->
+  <project path="system/core" name="android_system_core" groups="pdk" remote="ewOS" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="ewOS" />
+  <project path="system/update_engine" name="android_system_update_engine" groups="pdk" remote="ewOS" />
+
+  <!-- Begin Extras -->
+
+  <!-- Device -->
+  <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="ewOS" />
+
+  <!-- Packages -->
+  <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="ewOS" />
+  <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="ewOS" />
+  <project path="packages/apps/Updates" name="android_packages_apps_Updates" remote="ewOS" />
+
+  <!-- Vendor -->
+  <project path="vendor/aosp" name="android_vendor_aosp" remote="ewOS" />
+  <project path="vendor/custom-preference" name="android_vendor_custom-preference" remote="ewOS" />
+
+  <!-- Hardware -->
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="ewOS" />
+
+</manifest>

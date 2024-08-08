@@ -29,7 +29,7 @@
   <!-- External -->
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="pdk" remote="ewOS" />
   <project path="external/jemalloc_new" name="android_external_jemalloc_new" groups="pdk" remote="ewOS" />
-  <project path="external/skia" name="android_external_skia" groups="pdk" remote="ewOS" />
+  <!-- project path="external/skia" name="android_external_skia" groups="pdk" remote="ewOS" /-->
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="ewOS" />

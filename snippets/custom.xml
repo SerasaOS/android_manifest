@@ -7,7 +7,7 @@
 
   <remote  name="everest"
            fetch="https://github.com/ProjectEverest/"
-           revision="qpr3" />
+           revision="14" />
 
   <remote  name="PixelOS-Gitlab"
            fetch="https://gitlab.com/PixelOS-AOSP"

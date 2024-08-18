@@ -12,7 +12,7 @@ repo init -u https://github.com/SerasaOS/android_manifest.git -b 14 --git-lfs
 Then sync up:
 
 ```bash
-repo sync
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
 Building the System
@@ -37,5 +37,5 @@ mka bacon
 
 Credits
 ---------------
-* [**PixelOS**](https://github.com/PixelOS-AOSP)
 * [**LineageOS**](https://github.com/LineageOS)
+* [**PixelOS**](https://github.com/PixelOS-AOSP)

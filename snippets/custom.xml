@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="awaken-gitea"
-           fetch="https://gitea.com/Project-Awaken/"
-          revision="ursa" />
-
   <remote  name="everest"
            fetch="https://github.com/ProjectEverest/"
            revision="14" />
@@ -22,7 +18,7 @@
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="pixelstar" />
 
   <!-- Vendor -->
-  <project path="vendor/gms" name="android_vendor_gms" clone-depth="1" remote="awaken-gitea" />
+  <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="PixelOS-Gitlab" />
   <project path="vendor/certification" name="vendor_certification" remote="everest" />
 
 </manifest>

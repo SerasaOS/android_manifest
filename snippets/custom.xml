@@ -9,13 +9,8 @@
            fetch="https://gitlab.com/PixelOS-AOSP"
            revision="refs/heads/fourteen" />
 
-  <remote  name="pixelstar"
-           fetch="https://github.com/Project-Pixelstar/"
-           revision="14-qpr3" />
-
   <!-- Packages -->
   <project path="packages/apps/Pif" name="packages_apps_Pif" remote="everest" />
-  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="pixelstar" />
 
   <!-- Vendor -->
   <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="PixelOS-Gitlab" />

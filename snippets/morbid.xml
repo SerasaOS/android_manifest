@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
   <!-- GitHub (Project-Morbid) -->
   <remote  name="morbid"
            fetch="https://github.com/SerasaOS/"
            revision="unsub" />
+
+  <!-- GitHub (Project-Pixelstar) -->
+  <remote  name="pixelstar"
+           fetch="https://github.com/Project-Pixelstar/"
+           revision="14-qpr3" />
 
   <!-- Pixelstar GMS -->
   <remote  name="pixelstar-gitlab"
@@ -41,7 +45,7 @@
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="morbid" />
   <project path="packages/overlays/Themes" name="android_packages_overlays_Themes" remote="morbid" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="morbid" />
-  <project path="packages/apps/Pif" name="android_packages_apps_Pif" remote="morbid" />
+  <project path="packages/apps/Pif" name="packages_apps_Pif" remote="pixelstar" />
   <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="morbid" />
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="morbid" />
 
@@ -57,7 +61,7 @@
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" revision="unsub-legacy-um" remote="morbid" />
 
   <!-- General repos -->
-  <project path="vendor/certification" name="vendor_certification" remote="morbid" />
+  <project path="vendor/certification" name="vendor_certification" remote="pixelstar" />
   <project path="vendor/custom" name="android_vendor_custom" remote="morbid" />
 
   <!-- Vendor repos -->

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- Hardware repos - QCOM -->
-  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="pixelstar" >
+    <!-- Hardware repos - QCOM -->
+    <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="morbid" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->

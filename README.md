@@ -1,36 +1,38 @@
-------------
-The MORBID, an AOSP based custom rom lead by a passionate team aiming to provide a clean and smooth experience of stock android with Pixel Goodies.
-
-Requirements
-------------
-- At least 250-300 GB free disk space.
-- A computer/server with at least 16GB RAM running Linux and a fast & stable internet connection.
-- Some basic knowledge of Linux commands, device tree management and git.
-
-Instructions
-------------
-### Prerequisites
-A properly configured build environment is required to build AOSP custom roms. A comprehensive guide for setting up the build environment can be found [here](https://source.android.com/setup/build/initializing).
-
-Sync up the source
-------------
+Getting Started
+---------------
+**To initialize your local repository, use command:**
 ```bash
-repo init -u https://github.com/SerasaOS/android_manifest -b unsub --git-lfs
-
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+repo init -u https://github.com/SerasaOS/android_manifest.git -b unsub --git-lfs
 ```
 
-Build
-------------
-### Set up environment
+**Sync up with this command:**
+```bash
+repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 ```
+
+Building the System
+-------------------
+ **Initialize the ROM environment with the envsetup.sh script.**
+```bash
 . build/envsetup.sh
 ```
-### Choose a target
+
+**Lunch your device after cloning all device sources if needed.**
+```bash
+lunch morbid_devicecodename-buildtype
 ```
-lunch morbid_$device-userdebug
-```
-### Build the code
-```
+
+**Start compilation**
+```bash
 mka bacon
 ```
+
+Credits
+---------------
+* [**AOSPA**](https://github.com/AOSPA)
+* [**crDroid**](https://github.com/crdroidandroid)
+* [**DotOS**](https://github.com/DotOS)
+* [**LineageOS**](https://github.com/LineageOS)
+* [**PixelStar**](https://github.com/Project-PixelStar)
+* [**Project Kaleidoscope**](https://github.com/Project-Kaleidoscope)
+* [**Xdroid-OSS**](https://github.com/xdroid-oss)

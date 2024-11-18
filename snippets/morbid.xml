@@ -45,7 +45,7 @@
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="morbid" />
   <project path="packages/overlays/Themes" name="android_packages_overlays_Themes" remote="morbid" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="morbid" />
-  <project path="packages/apps/Pif" name="packages_apps_Pif" remote="pixelstar" />
+  <project path="packages/apps/Pif" name="packages_apps_Pif" remote="morbid" />
   <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="morbid" />
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="morbid" />
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" groups="pdk" remote="morbid" />

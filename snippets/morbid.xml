@@ -55,7 +55,7 @@
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="pixelstar" />
 
   <!-- Hardware repos -->
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="morbid" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="pixelstar" />
   <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="morbid" />
   <project path="hardware/mediatek" name="hardware_mediatek" remote="pixelstar" />
 

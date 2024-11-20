@@ -33,6 +33,8 @@
   </project>
   <project path="bootable/recovery" name="android_bootable_recovery" remote="morbid" />
   <project path="manifest" name="android_manifest" remote="morbid" />
+  <project path="libcore" name="libcore" groups="pdk" remote="pixelstar" />
+  <project path="build/release" name="build_release" groups="pdk,tradefed" remote="pixelstar" />
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="morbid" />
@@ -49,15 +51,20 @@
   <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="morbid" />
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="morbid" />
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" groups="pdk" remote="morbid" />
+  <project path="packages/modules/IntentResolver" name="packages_modules_IntentResolver" groups="pdk,sysui-studio" remote="pixelstar" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="pixelstar" />
 
   <!-- Hardware repos -->
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="morbid" />
   <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="morbid" />
+  <project path="hardware/mediatek" name="hardware_mediatek" remote="pixelstar" />
 
   <!-- System repos -->
   <project path="system/core" name="android_system_core" remote="morbid" />
+  <project path="system/keymint" name="system_keymint" remote="pixelstar" />
 
   <!-- Device repos -->
+  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" revision="14-qpr3" remote="pixelstar"/>
   <project path="device/morbid/sepolicy" name="android_device_morbid_sepolicy" remote="morbid" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" revision="unsub-legacy-um" remote="morbid" />
 
